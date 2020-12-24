@@ -3,31 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class GenericSource : MonoBehaviour
+public class GenericSource : Interactable
 {
-    private bool playerInRange;
-    public UnityEvent PickupEvent;
+    protected float priority;
+    protected Collider2D myBoxCollider;
 
-    // Start is called before the first frame update
-    void Start()
+    public InteractableList interactableList;
+
+    private void Awake()
     {
+        myBoxCollider = GetComponent<CircleCollider2D>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetButtonDown("Fire3") && playerInRange)
-        {
-            this.transform.root.gameObject.SetActive(false); // TODO object pooling/destroy?
-            PickupEvent.Invoke();
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
         {
-            playerInRange = true;
+            SetPriority(other);
+            if(this.gameObject.activeSelf && this.gameObject.activeInHierarchy)
+            {
+                interactableList.Add(this);
+            }
         }
     }
 
@@ -35,7 +30,34 @@ public class GenericSource : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            playerInRange = false;
+            interactableList.Remove(this);
         }
+    }
+
+    private void OnDestroy()
+    {
+        interactableList.Remove(this);
+    }
+
+    private void OnDisable()
+    {
+        interactableList.Remove(this);
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            SetPriority(other);
+        }
+    }
+    protected void SetPriority(Collider2D other)
+    {
+        priority = Vector3.Distance(myBoxCollider.bounds.center, other.bounds.center);
+    }
+
+    public new float GetPriority()
+    {
+        return priority;
     }
 }

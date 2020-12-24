@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2593043981460770729}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,13 +100,13 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 9.88
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &2593043981460770722
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   playerState: {fileID: 11400000, guid: 4385237b86f4a82409ccfd9361f76916, type: 2}
-  playerPowerQueue: {fileID: 11400000, guid: 63e700f4133de744393d0724e0680118, type: 2}
+  playerPowerBuffer: {fileID: 11400000, guid: 63e700f4133de744393d0724e0680118, type: 2}
 --- !u!95 &2593043981460770729
 Animator:
   serializedVersion: 3

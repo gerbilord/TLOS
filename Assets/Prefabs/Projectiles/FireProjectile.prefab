@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8980783147984339472}
   - component: {fileID: -1691534545995057199}
   - component: {fileID: 2417533136733210058}
+  - component: {fileID: 7710616974494343237}
   m_Layer: 0
   m_Name: FireProjectile
   m_TagString: Untagged
@@ -72,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -167954733
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 339eed2941d61b64a9d2ba39f0014743, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -99,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody2D: {fileID: 4460790705245600328}
-  mySpeed: 20
+  mySpeed: 12
 --- !u!50 &4460790705245600328
 Rigidbody2D:
   serializedVersion: 4
@@ -146,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89ea2f495f33b78439cf16454ed4e818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  elementalEffects:
+  tags:
   - {fileID: 11400000, guid: 43089209299d619479f8b9a52179f43b, type: 2}
 --- !u!61 &2417533136733210058
 BoxCollider2D:
@@ -174,3 +175,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.1, y: 2.7}
   m_EdgeRadius: 0
+--- !u!114 &7710616974494343237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328977003759359350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fbfd0b1f71107f4697718fefef54668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thingsThatDestroyMe:
+  - {fileID: 11400000, guid: 6b911aa9abc8d5f488ab8f3380725b8e, type: 2}

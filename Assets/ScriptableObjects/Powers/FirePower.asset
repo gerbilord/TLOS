@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: FirePower
   m_EditorClassIdentifier: 
   projectile: {fileID: 11400000, guid: 998f214d29b839849927dd34ba3d1179, type: 2}
-  melee: {fileID: 11400000, guid: d6730d48754db27428436ffa966c5625, type: 2}
+  melee: {fileID: 11400000, guid: ddc276ea05bccef4cbcf114dbdd5af5c, type: 2}

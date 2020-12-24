@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3317572555802839243}
   - component: {fileID: 8048387134686592010}
   - component: {fileID: -7222944931881757728}
+  - component: {fileID: -1226959669925949190}
   m_Layer: 0
   m_Name: lightProjectile
   m_TagString: Untagged
@@ -71,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -167954733
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 57129c650707d4a4fa2e61822b2e382f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -159,3 +160,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6, y: 4.5}
   m_EdgeRadius: 0
+--- !u!114 &-1226959669925949190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8411257907691009124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fbfd0b1f71107f4697718fefef54668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thingsThatDestroyMe:
+  - {fileID: 11400000, guid: 6b911aa9abc8d5f488ab8f3380725b8e, type: 2}
