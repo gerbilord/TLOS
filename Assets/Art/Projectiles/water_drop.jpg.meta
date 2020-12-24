@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: cb841ec4c604eb24a969dcb400ad495a
+guid: a9945aeedcf49ad41b72c7ae6b1577ec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6952255750235482898
-    second: flames_0
-  - first:
-      213: -8580444318367042149
-    second: water_0
+      213: -868945178380921472
+    second: water_drop_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 45, y: 247, z: 467, w: 201}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -89,17 +86,29 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: flames_0
+      name: water_drop_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 249
-        width: 79
-        height: 150
+        x: 185
+        y: 418
+        width: 1207
+        height: 765
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -107,29 +116,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21be37c25cf5b7060800000000000000
-      internalID: 6952255750235482898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: water_0
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 44
-        width: 79
-        height: 151
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b95b6b48a532ce880800000000000000
-      internalID: -8580444318367042149
+      spriteID: 0851151d6f2e0f3f0800000000000000
+      internalID: -868945178380921472
       vertices: []
       indices: 
       edges: []

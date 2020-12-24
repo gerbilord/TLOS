@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1939869187}
   - component: {fileID: 7616950608569535248}
   m_Layer: 0
-  m_Name: FireSource
+  m_Name: WaterSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,13 +74,13 @@ SpriteRenderer:
   m_SortingLayerID: 1858645537
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6952255750235482898, guid: cb841ec4c604eb24a969dcb400ad495a,
+  m_Sprite: {fileID: -8580444318367042149, guid: cb841ec4c604eb24a969dcb400ad495a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.79, y: 1.5}
+  m_Size: {x: 0.79, y: 1.51}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reactionList:
-  - {fileID: 11400000, guid: da1f26d1ba5f19f4195ec9656260b5e6, type: 2}
+  - {fileID: 11400000, guid: 43089209299d619479f8b9a52179f43b, type: 2}
   reactEvent:
     m_PersistentCalls:
       m_Calls:
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tags:
-  - {fileID: 11400000, guid: 43089209299d619479f8b9a52179f43b, type: 2}
+  - {fileID: 11400000, guid: da1f26d1ba5f19f4195ec9656260b5e6, type: 2}
 --- !u!58 &1939869187
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
         m_MethodName: AddPower
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: cfaaeda0154d7424e88b7e72b3fba952,
+          m_ObjectArgument: {fileID: 11400000, guid: dead9ece2e480cd498a2f1267d709527,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: GenericPower, Assembly-CSharp
           m_IntArgument: 0

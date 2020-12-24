@@ -28,6 +28,7 @@ public class PlayerPowerBufferUi : MonoBehaviour
         EraseUi();
         for(int i = 0; i < powers.ToArray().Length; i++)
         {
+            // change ui depending on power.
             elements[i].gameObject.SetActive(true);
         }
     }

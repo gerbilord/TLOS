@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: -8557423926471090974}
   - component: {fileID: 4944004779484969068}
   - component: {fileID: 4944004779484969059}
+  - component: {fileID: 8730542632774260438}
   - component: {fileID: 1638790747}
   - component: {fileID: 180748828}
   m_Layer: 0
@@ -276,6 +277,34 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4944004779484969068}
         m_MethodName: Activate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8730542632774260438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4944004779484969063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a116c80b3c2774c9c59f0882fa95be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reactionList:
+  - {fileID: 11400000, guid: da1f26d1ba5f19f4195ec9656260b5e6, type: 2}
+  reactEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4944004779484969068}
+        m_MethodName: Deactivate
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
